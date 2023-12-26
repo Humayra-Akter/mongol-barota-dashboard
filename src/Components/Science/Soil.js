@@ -1,7 +1,7 @@
 import React from "react";
 
-const Autonomous = () => {
+const Soil = () => {
   return <div></div>;
 };
 
-export default Autonomous;
+export default Soil;
