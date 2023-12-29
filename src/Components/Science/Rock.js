@@ -15,7 +15,10 @@ const Rock = () => {
   return (
     <div>
       <div className="mt-10">
-        <p className="text-center">panorama image</p>
+        <p className="text-center">
+          <img />
+          panorama image
+        </p>
         <p className="text-center">microscopic image</p>
       </div>
       <div className="grid grid-cols-2 gap-10 p-10">
