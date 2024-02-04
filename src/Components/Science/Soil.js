@@ -1,7 +1,11 @@
 import React from "react";
 import Capture from "./Capture";
 import protein from "../../images/protin_sample.png";
+import protein2 from "../../images/protein.png";
+import carbo from "../../images/carbo_benedict.jpg";
+import ammonia from "../../images/ammonia.jpg";
 import Box from "./Box";
+import Boxes from "./Boxes";
 
 const Soil = () => {
   return (
@@ -22,11 +26,31 @@ const Soil = () => {
         </div>
         <div>
           <Box />
+          {/* <Boxes/> */}
         </div>
       </div>
       <div>
-        {/* <Capture /> */}
-        <img src={protein} className="p-28" />
+        <div className="p-20">{/* <Capture /> */}</div>
+        <div className="flex gap-10 px-20 py-16">
+          <div>
+            <img src={protein} className="w-full h-80" />
+            <p className="text-center font-bold">protein</p>
+          </div>
+          <div>
+            <img src={protein2} className="w-full h-80" />
+            <p className="text-center font-bold">protein test</p>
+          </div>
+        </div>
+        <div className="flex gap-10 px-20">
+          <div>
+            <img src={carbo} className="w-full h-80" />
+            <p className="text-center font-bold">carbohydrate</p>
+          </div>
+          <div>
+            <img src={ammonia} className="w-full h-80" />
+            <p className="text-center font-bold">ammonia test</p>
+          </div>
+        </div>
       </div>
     </div>
   );
