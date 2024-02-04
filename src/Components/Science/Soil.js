@@ -1,11 +1,13 @@
 import React from "react";
+import Capture from "./Capture";
+import protein from "../../images/protin_sample.png";
 
 const Soil = () => {
   return (
     <div className="grid grid-cols-2">
       <div>
         <div>
-          <p className="text-justify p-20">
+          <div className="text-justify p-20">
             <p> *We used the biuret reagent for the protein test. </p>
             <p>
               {" "}
@@ -16,10 +18,16 @@ const Soil = () => {
               *The MQ135 gas sensor is used to detect the presence of ammonia or
               its ions in the soil.
             </p>
-          </p>
+          </div>
+        </div>
+        <div>
+          
         </div>
       </div>
-      <div></div>
+      <div>
+          {/* <Capture /> */}
+        <img src={protein} className="p-28" />
+      </div>
     </div>
   );
 };
