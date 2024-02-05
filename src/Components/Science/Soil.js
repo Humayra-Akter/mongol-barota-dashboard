@@ -6,6 +6,8 @@ import carbo from "../../images/carbo_benedict.jpg";
 import ammonia from "../../images/ammonia.jpg";
 import Box from "./Box";
 import Boxes from "./Boxes";
+import BioSensor from "./BioSensor";
+import PHSensor from "./PHSensor";
 
 const Soil = () => {
   return (
@@ -26,6 +28,8 @@ const Soil = () => {
         </div>
         <div>
           <Box />
+          <BioSensor />
+          <PHSensor />
           {/* <Boxes/> */}
         </div>
       </div>
