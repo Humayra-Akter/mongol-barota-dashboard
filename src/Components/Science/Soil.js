@@ -8,6 +8,7 @@ import Box from "./Box";
 import Boxes from "./Boxes";
 import BioSensor from "./BioSensor";
 import PHSensor from "./PHSensor";
+import TemperatureSensorChart from "./TemperatureSensorChart";
 
 const Soil = () => {
   return (
@@ -30,6 +31,7 @@ const Soil = () => {
           <Box />
           <BioSensor />
           <PHSensor />
+          <TemperatureSensorChart />
           {/* <Boxes/> */}
         </div>
       </div>
