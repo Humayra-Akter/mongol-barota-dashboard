@@ -9,53 +9,63 @@ import Boxes from "./Boxes";
 import BioSensor from "./BioSensor";
 import PHSensor from "./PHSensor";
 import TemperatureSensorChart from "./TemperatureSensorChart";
+import PressureSensorChart from "./PressureSensorChart";
 
 const Soil = () => {
   return (
-    <div className="grid grid-cols-2">
-      <div>
+    <div>
+      <div className="grid grid-cols-2">
         <div>
-          <div className="text-justify p-20">
-            <p> *We used the buret reagent for the protein test. </p>
-            <p>
-              *The detection of Carbohydrate was done by using Benedict’s
-              solution and Iodine solution.
-            </p>
-            <p>
-              *The MQ135 gas sensor is used to detect the presence of ammonia or
-              its ions in the soil.
-            </p>
+          <div>
+            <div className="text-justify p-20">
+              <p> *We used the buret reagent for the protein test. </p>
+              <p>
+                *The detection of Carbohydrate was done by using Benedict’s
+                solution and Iodine solution.
+              </p>
+              <p>
+                *The MQ135 gas sensor is used to detect the presence of ammonia
+                or its ions in the soil.
+              </p>
+            </div>
+          </div>
+          <div>
+            <Box />
+            {/* <Boxes/> */}
           </div>
         </div>
         <div>
-          <Box />
-          <BioSensor />
-          <PHSensor />
-          <TemperatureSensorChart />
-          {/* <Boxes/> */}
+          <div className="p-20">{/* <Capture /> */}</div>
+          <div className="flex gap-10 px-20 py-16">
+            <div>
+              <img src={protein} className="w-full h-80" />
+              <p className="text-center font-bold">protein</p>
+            </div>
+            <div>
+              <img src={protein2} className="w-full h-80" />
+              <p className="text-center font-bold">protein test</p>
+            </div>
+          </div>
+          <div className="flex gap-10 px-20">
+            <div>
+              <img src={carbo} className="w-full h-80" />
+              <p className="text-center font-bold">carbohydrate</p>
+            </div>
+            <div>
+              <img src={ammonia} className="w-full h-80" />
+              <p className="text-center font-bold">ammonia test</p>
+            </div>
+          </div>
         </div>
       </div>
       <div>
-        <div className="p-20">{/* <Capture /> */}</div>
-        <div className="flex gap-10 px-20 py-16">
-          <div>
-            <img src={protein} className="w-full h-80" />
-            <p className="text-center font-bold">protein</p>
-          </div>
-          <div>
-            <img src={protein2} className="w-full h-80" />
-            <p className="text-center font-bold">protein test</p>
-          </div>
+        <div className="grid grid-cols-2 p-20">
+          <BioSensor />
+          <PHSensor />
         </div>
-        <div className="flex gap-10 px-20">
-          <div>
-            <img src={carbo} className="w-full h-80" />
-            <p className="text-center font-bold">carbohydrate</p>
-          </div>
-          <div>
-            <img src={ammonia} className="w-full h-80" />
-            <p className="text-center font-bold">ammonia test</p>
-          </div>
+        <div className="grid grid-cols-2 p-20">
+          <TemperatureSensorChart />
+          <PressureSensorChart />
         </div>
       </div>
     </div>

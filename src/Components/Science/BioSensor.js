@@ -28,7 +28,7 @@ const BioSensorChart = () => {
 
   return (
     <div className="pl-20 mt-20">
-      <p className="text-2xl">Bio-Sensor Data</p>
+      <p className="text-2xl">Humidity Data</p>
       <ResponsiveContainer width="100%" height={400}>
         <LineChart data={data}>
           <CartesianGrid strokeDasharray="3 3" />
