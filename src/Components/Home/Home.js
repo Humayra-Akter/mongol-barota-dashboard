@@ -11,8 +11,11 @@ const Home = () => {
           alt="Landing Page"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-yellow-950 to-transparent"></div>
-        <h1 className="text-8xl font-bold text-white absolute z-[1]">
+        <h1 className="text-8xl font-bold mb-40 text-white absolute z-[1]">
           MIST MONGOL BAROTA
+        </h1>
+        <h1 className="text-6xl mt-20 font-bold text-white absolute z-[1]">
+          SAR-2023
         </h1>
       </div>
     </div>

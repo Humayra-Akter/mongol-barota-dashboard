@@ -35,7 +35,7 @@ const Soil = () => {
           </div>
         </div>
         <div>
-          <div className="p-20">{/* <Capture /> */}</div>
+          <div className="p-20"> {/* <Capture />{" "} */}</div>
           <div className="flex gap-10 px-20 py-16">
             <div>
               <img src={protein} className="w-full h-80" />
